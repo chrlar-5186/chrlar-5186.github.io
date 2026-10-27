@@ -31,12 +31,8 @@ async function a() {
         if (snapshot.exists()) {
             console.log("True!");
             b = snapshot.val();
-        } else {
-            console.error("doesn't exist!")
-        }
-    })
 
-    console.log(b)
+            console.log(b)
 
     for (var i in b) {
         const x = document.createElement("button");
@@ -136,6 +132,11 @@ async function a() {
         }
         
     };
+    
+        } else {
+            console.error("doesn't exist!")
+        }
+    })
 }
 
 a()
