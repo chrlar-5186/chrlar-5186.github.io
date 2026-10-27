@@ -1,0 +1,29 @@
+{
+    
+    "Teams": {
+        "Link": "https://teams.microsoft.com",
+        "Name": "Microsoft Teams",
+        "Description": "Microsoft Teams wird von unserer Schule verwendet, damit man die Skripten hat usw."
+    },
+    "HTL-Homepage": {
+        "Link": "https://www.htlstp.ac.at/",
+        "Name": "HTL Homepage",
+        "Description": "Die HTL Seite ist unsere haupt-page, da wir Sharepoints haben, und so weiter."
+    },
+    "View-My-Marks": {
+        "Link": "https://vmm.htlstp.ac.at/",
+        "Name": "View my Marks (VMM)",
+        "Description": "Da werden unsere Benotung aufgeteilt."
+    },
+    "Riesenhuber-gitlab": {
+        "Link": "https://rieg.gitlab.io/cabs",
+        "Name": "CABS - Webseite",
+        "Description": "Da sind die CABS Erklärungen, Beispiele und alles was man braucht in der Praxis."
+    },
+    "Untis": {
+        "Link": "https://htlstp.webuntis.com/",
+        "Name": "Untis",
+        "Description": "Da sind die Stundenpläne der 1CHIF"
+    }
+
+}
