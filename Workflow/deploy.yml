@@ -1,13 +1,22 @@
 name: Deploying Secret
 
-steps:
-  run: node Scripts/Terminen.js
-  env:
-    apiKey     : ${{ secrets.APIKEY }}
-    appId      : ${{ secrets.APPID }}
-    authDomain : ${{ secrets.AUTHDOMAIN }}
-    databaseURL: ${{ secrets.DATABASEURL }}
-    measurementID: ${{ secrets.MEASUREMENTID }}
-    messagingSenderID: ${{ secrets.MESSAGINGSENDERID }}
-    projectId  : ${{ secrets.PROJECTID }}
-    storageBucket : ${{ secrets.STORAGEBUCKET }}
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run script
+        run: node Scripts/Terminen.js
+        env:
+          apiKey: ${{ secrets.APIKEY }}
+          appId: ${{ secrets.APPID }}
+          authDomain: ${{ secrets.AUTHDOMAIN }}
+          databaseURL: ${{ secrets.DATABASEURL }}
+          measurementID: ${{ secrets.MEASUREMENTID }}
+          messagingSenderID: ${{ secrets.MESSAGINGSENDERID }}
+          projectId: ${{ secrets.PROJECTID }}
+          storageBucket: ${{ secrets.STORAGEBUCKET }}   
