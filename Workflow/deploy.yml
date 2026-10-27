@@ -1,1 +1,12 @@
+name: Deploying Secret
 
+run: node Scripts/Terminen.js
+env:
+  apiKey     : ${{ secrets.APIKEY }}
+  appId      : ${{ secrets.APPID }}
+  authDomain : ${{ secrets.AUTHDOMAIN }}
+  databaseURL: ${{ secrets.DATABASEURL }}
+  measurementID: ${{ secrets.MEASUREMENTID }}
+  messagingSenderID: ${{ secrets.MESSAGINGSENDERID }}
+  projectId  : ${{ secrets.PROJECTID }}
+  storageBucket : ${{ secrets.STORAGEBUCKET }}
