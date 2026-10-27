@@ -1,4 +1,16 @@
-import { returnDatabase} from "./Database.js"
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCcep-y3tNdgI4kMz0U-38L41GXsW-76Aw",
+  authDomain: "newtest-3e59f.firebaseapp.com",
+  databaseURL: "https://newtest-3e59f-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "newtest-3e59f",
+  storageBucket: "newtest-3e59f.firebasestorage.app",
+  messagingSenderId: "368069588903",
+  appId: "1:368069588903:web:4800f55bbd0517b9332882",
+  measurementId: "G-L17KMJGZLZ"
+};
 
 document.addEventListener("contextmenu", function (event) {
     event.preventDefault();
@@ -12,8 +24,19 @@ console.log(returnDatabase());
 
 async function a() {
 
-    const json =  await fetch("../Json/Testterminen.json");
-    const b = await json.json();
+    let b;
+    const app = initializeApp(firebaseConfig);
+
+    const Database = getDatabase(app);
+    const refDataBase = ref(Database);
+    get(child(refDataBase, "Faechern")).then((snapshot) => {
+        if (snapshot.exists()) {
+            console.log("True!");
+            b = snapshot.val();
+        } else {
+            console.error("doesn't exist!")
+        }
+    })
 
     console.log(b)
 
