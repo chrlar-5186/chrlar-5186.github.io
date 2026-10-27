@@ -20,8 +20,6 @@ document.addEventListener("contextmenu", function (event) {
 const Options = document.getElementById("options");
 const Informationen = document.getElementById("Informationen");
 
-console.log(returnDatabase());
-
 async function a() {
 
     let b;
