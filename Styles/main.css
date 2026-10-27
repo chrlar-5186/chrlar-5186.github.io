@@ -1,0 +1,128 @@
+:root {
+    background-image: url("../Assets/Main.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+    /* Variables */
+    
+    --font-size: 40px;
+}
+
+
+
+/* General Styling */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+/* Classes and IDs */
+
+.Head-Description {
+    background-color: rgba(134, 140, 142, 0.343);
+    align-content: center;
+    text-align: center;
+    padding: 25px;
+
+    border-radius: 0 0 25px 25px;
+    border-left: solid 2px white;
+    border-bottom: solid 2px white;
+    border-right: solid 2px white;
+
+    box-shadow: 3px 0 8px white;
+}
+
+.main-header-text {
+    color: white;
+    font-size: var(--font-size);
+
+    padding: 0 25px;
+    font-weight: 800;
+}
+
+.preface {
+    text-align: center;
+
+    margin: 45px 55px;
+    padding: 25px 0;
+
+    background-color: rgba(0, 0, 0, 0.361);
+    font-weight: 1000;
+    color: white;
+
+    border-radius: 20px;
+    border: solid white;
+    box-shadow: 3px 0 10px white;
+}
+
+.preface>p {
+    margin: 0 45px
+}
+
+.main-help, #external-help {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 4fr));
+    gap: 15px;
+    margin: 25px; 
+
+}
+
+.main-box > h1,.External>h1 {
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.286);
+    border-radius: 15px;
+    padding: 10px 25px;
+    margin: 0 25px;
+    color: white;
+    border: solid 2px white;
+    box-shadow: 2px 2px 4px white;
+}
+
+.Links {
+
+    background-color: white;
+    padding: 20px;
+    display: block;
+    border-radius: 10px;
+    border: solid 2px rgba(165, 165, 165, 0.706);
+
+    box-shadow: 10px 5px 25px white;
+
+    transition: all 0.3s ease-out;
+
+}
+
+.btn-title {
+    padding: 10px 0 10px 0;
+}
+.btn-paragraph {
+    padding: 10px 0 5px 0;
+}
+
+.Links:hover {
+
+    box-shadow: 10px 15px 15px rgb(15, 107, 29);
+    transform: translate3d(-2px, -4px, 0);
+    border-color: rgb(15, 107, 29);
+
+    transition: all 0.2s ease-out;
+
+}
+
+@media screen and (max-width: 360px) {
+    .preface>p {
+        font-size: 12px;
+    }
+    .preface {margin: 45px 35px}
+}

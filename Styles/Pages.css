@@ -1,0 +1,44 @@
+:root {
+    background-image: url("../Assets/Ext.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --default-font-size: 16px;
+    --h1-font-size: 32px
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    top: 0;
+    position: relative;
+}
+
+.Head-Description {
+    padding: 25px 0 0 0;
+    align-content: center;
+    text-align: center;
+
+    box-shadow: 0 15px 25px rgba(176, 176, 176, 0.572);
+
+    background-color: rgba(255, 255, 255, 0.152);
+    border-bottom: solid 2px rgba(255, 255, 255, 0.292);
+}
+
+#Terminen {
+    display: grid;
+}
+
+.Head-Description>img {
+    margin: 0 0 15px 0;
+}
+.Head-Description>h1 {
+    color: black;
+    font-size: var(--h1-font-size);
+}

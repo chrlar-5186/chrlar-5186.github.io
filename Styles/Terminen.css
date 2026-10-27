@@ -1,0 +1,56 @@
+:root {
+    --h1-font-size: 24px;
+}
+
+#options {
+    padding: 5px 0 5px 0;
+    margin: 25px 0 0 0;
+    text-align: center;
+ 
+}
+
+#options>button {
+    all: unset;
+
+    padding: 10px 30px;
+    margin: 5px;
+
+    color: black;
+    background-color: white;
+    font-weight: 700;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-out
+}
+#options>button:hover {
+    transform: translate3d(-2px, -2px, 0);
+    background-color: rgb(29, 135, 43);
+    color: white;
+
+    transition: all 0.2s ease-out;
+}
+
+#options>button:active {
+    color: yellow;
+    transition: all 0ms;
+}
+
+.Informations {
+    background-color: white;
+    padding: 55px 25px;
+    margin: 35px 45px 25px 45px;
+    border-radius: 15px;
+    border: solid 2px grey;
+    box-shadow: 0 0 20px black;
+}
+
+.Informations>h1 {
+    font-size: var(--h1-font-size);
+}
+
+.Schularbeiten_Sep, .Pruefungen_Sep {
+    border-bottom: 2px solid;
+    margin: 25px 0;
+    font-style: oblique;
+}
