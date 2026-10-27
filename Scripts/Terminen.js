@@ -1,16 +1,25 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 
+const apiKey = proccess.env.apiKey;
+const appId = proccess.env.appId;
+const authDomain = proccess.env.authDomain;
+const databaseURL = proccess.env.databaseURL;
+const measurementId = proccess.env.measurementID;
+const messagingSenderId = proccess.env.messagingSenderID;
+const projectId = proccess.env.projectId;
+const storageBucket = proccess.env.storageBucket;
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCcep-y3tNdgI4kMz0U-38L41GXsW-76Aw",
-  authDomain: "newtest-3e59f.firebaseapp.com",
-  databaseURL: "https://newtest-3e59f-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "newtest-3e59f",
-  storageBucket: "newtest-3e59f.firebasestorage.app",
-  messagingSenderId: "368069588903",
-  appId: "1:368069588903:web:4800f55bbd0517b9332882",
-  measurementId: "G-L17KMJGZLZ"
-};
+    apiKey: apiKey,
+    authDomain: authDomain,
+    databaseURL: databaseURL,
+    projectId: projectId,
+    storageBucket: storageBucket,
+    messagingSenderId: messagingSenderId,
+    appId: appId,
+    measurementId: measurementId
+}
 
 document.addEventListener("contextmenu", function (event) {
     event.preventDefault();
@@ -132,7 +141,7 @@ async function a() {
         }
         
     };
-    
+
         } else {
             console.error("doesn't exist!")
         }
