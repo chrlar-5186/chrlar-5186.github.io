@@ -27,8 +27,6 @@ async function Main(JsonFile) {
         newP.innerHTML = Description;
         newTemplate.appendChild(newP)
 
-        console.log("created", newTemplate.parentElement)
-
     }
 
     for (var i in Elements) {
