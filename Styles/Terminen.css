@@ -24,8 +24,9 @@
     transition: all 0.2s ease-out
 }
 #options>button:hover {
+
     transform: translate3d(-2px, -2px, 0);
-    background-color: rgb(29, 135, 43);
+    background-color: rgb(111, 217, 125);
     color: white;
 
     transition: all 0.2s ease-out;
@@ -35,7 +36,7 @@
     color: yellow;
     transition: all 0ms;
 }
-
+    
 .Informations {
     background-color: white;
     padding: 55px 25px;
