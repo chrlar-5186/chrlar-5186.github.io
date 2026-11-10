@@ -33,10 +33,10 @@
 }
 
 #options>button:active {
-    color: yellow;
+    color: rgb(255, 181, 254);
     transition: all 0ms;
 }
-    
+
 .Informations {
     background-color: white;
     padding: 55px 25px;
